@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Olá mundo</title>
+</head>
+<body>
+{% for item in object_list %}
+<h3>{{ item.título }}</h3>
+<ul>
+  <li>Quantidade: {{ item.quantidade }}</li>
+  <li>Preço Normal: {{ item.preço_normal }}</li>
+  <li>Na promoção: {{ item.preço_promocional }}</li>
+  <li>Status: {{ item.status }}</li>
+  <a href="{{ item.id }}">Saiba mais</a>
+</ul>
+<br>
+<br>
+{% endfor %}
+</body>
+</html>
